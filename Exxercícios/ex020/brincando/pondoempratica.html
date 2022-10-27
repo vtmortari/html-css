@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Teste de Pseudo-Classes</title>
+    <style>
+
+        body{
+            font: normal 1em Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            font: bold 2.5em 'Times New Roman', Times, serif;
+            
+        }
+        
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            display:inline-table;
+        }
+
+        div > p.pergunta {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div#d1:hover{
+            background-color: green;
+        }
+
+        div#d2:hover, #d3:hover {
+            background-color: red;
+        }
+
+        div > p.resposta{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div > p.resposta {
+            display: none;
+        }
+
+        div:hover > p.resposta {
+            display: block;
+            color: white;
+        }
+
+        div:hover > p.pergunta {
+            display: none;
+        }
+
+        p#equacao{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>
+        Pseudo-Classes com Matemágica
+    </h1>
+    <p>
+        Resolva a equacao:
+    </p>
+    <p id="equacao">
+        2x-4=8
+    </p>
+    <p>
+        Coloque o mouse em cima da resposta.
+    </p>
+    <div id="d1">
+        <p class="pergunta">
+            x=6
+        </p>
+        <p class="resposta">
+            Acertou, miseravi!
+        </p>
+    </div>
+    <div id="d2">
+        <p class="pergunta">
+            x=8
+        </p>
+        <p class="resposta">
+            Errou!
+        </p>
+    </div>
+    <div id="d3">
+        <p class="pergunta">
+            x=2
+        </p>
+        <p class="resposta">
+            Errou!
+        </p>
+    </div>    
+</body>
+</html>

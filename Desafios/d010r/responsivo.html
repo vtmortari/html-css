@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+
+        /* 
+        
+            Utilizando os recursos "min/max-width", podemos criar uma primeira responsividade em nosso site. Esse recurso define quais serão os tamanhos minimos e máximos de nosso site, fazendo com que ele se adapte aos tamanhos de tela disponiveis nos navegadores.
+
+            Ao utilizar o recurso "width: 100%" fazemos com que recursos como imagens, se adaptem ao width disponivel da caixa onde estão contidos, criando uma responsividade em tempo real dessas imagens.
+
+        */
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>
+            Testando Responsividade
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deleniti! Numquam illo voluptatem cupiditate. Rem maxime alias repellat ducimus sint, doloribus doloremque quidem debitis vitae, itaque officia labore atque non?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam dolore asperiores aut, corporis exercitationem officiis error consequuntur hic, rerum eaque perspiciatis quasi reprehenderit enim a odio ipsa? Recusandae, iusto delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel omnis ad ex nesciunt pariatur commodi obcaecati dolores harum consectetur neque, odio quod esse itaque maiores porro repudiandae distinctio ut! Ut Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi non, voluptates necessitatibus animi deserunt saepe corrupti ab excepturi sunt impedit doloremque accusantium dolores, repudiandae recusandae placeat cumque vitae praesentium voluptas.
+        </p>
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deleniti! Numquam illo voluptatem cupiditate. Rem maxime alias repellat ducimus sint, doloribus doloremque quidem debitis vitae, itaque officia labore atque non?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam dolore asperiores aut, corporis exercitationem officiis error consequuntur hic, rerum eaque perspiciatis quasi reprehenderit enim a odio ipsa? Recusandae, iusto delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel omnis ad ex nesciunt pariatur commodi obcaecati dolores harum consectetur neque, odio quod esse itaque maiores porro repudiandae distinctio ut! Ut Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi non, voluptates necessitatibus animi deserunt saepe corrupti ab excepturi sunt impedit doloremque accusantium dolores, repudiandae recusandae placeat cumque vitae praesentium voluptas.
+        </p>
+    </main>
+
+</body>
+</html>

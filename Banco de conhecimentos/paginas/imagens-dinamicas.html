@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <h1>
+            Imagens Dinâmicas
+        </h1>
+        <hr>
+        <p>
+            Quando queremos que o tamanho de nossa imagens se ajuste ao <strong>tamanho de tela disponivel do dispositivo</strong> que acessa nosso site, criamos uma <strong>imagem dinâmica</strong>.
+        </p>
+        
+        <p>
+            Para criar uma imagem dinâmica, utilizamos a tag <strong>&lt;picture&gt;</strong> e dentro dela criamos uma tag <strong>&lt;img&gt;</strong> com nossa imagem final e acima criamos tags <strong>&lt;source:midia:type&gt;</strong> com as imagens alternativas que ajustaremos para cada tamanho disponível, assim como seu midia type e o tamanho máximo para uqal aquela imagem deve ser exibida.
+        </p>
+        <p>
+            A ordem dos elementos <strong>sempre</strong> deve ir da menor foto para a maior, terminando na foto original na tag <strong>&lt;img&gt;</strong>.
+        </p>
+        <h2>
+            Exemplo
+        </h2>
+        <p>
+            Tente mudar o tamanho da aba. <br>
+            <picture>
+                <source media="(max-width: 750px )" srcset="../imagens/foto-p.png" type="image/png">
+                <source media="(max-width: 1050px )" srcset="../imagens/foto-m.png" type="image/png">
+                <img src="../imagens/foto-g.png" alt="foto grande">
+            </picture>
+        </p>
+        <h2>
+            Exemplo de Código
+        </h2>
+        <pre>
+            <code>
+                &lt;p&gt;
+                    Tente mudar o tamanho da aba. <br>
+                    &lt;picture&gt;
+                        &lt;source media="(max-width: 750px )" srcset="../imagens/foto-p.png" type="image/png"&gt;
+                        &lt;source media="(max-width: 1050px )" srcset="../imagens/foto-m.png" type="image/png"&gt;
+                        &lt;img src="../imagens/foto-g.png" alt="foto grande"&gt;
+                    &lt;/picture&gt;
+                &lt;/p&gt;
+            </code>
+        </pre>
+        <a href="../Principal.html" target="_self" rel="prev">Voltar</a>
+    </main>
+</body>
+</html>

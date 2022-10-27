@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Listas Ordenadas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <h1>
+            Listas Ordenadas
+        </h1>
+        <hr>
+        <p>
+            Quando desejamos criar uma lista onde a <strong>ordem dos elementos</strong> presentes nela são importantes, como por exemplo, listas de colocados, rankings ou qualquer coisa do tipo, utilizamos a tag &lt;ol&gt; (ordered list).
+        </p>
+        <p>
+            Sempre que criamos uma lista, para identificar os elementos dentro da tag como itens da lista, utilizamos a tag &lt;li&gt;.
+        </p>
+        <h2>
+            Exemplo
+        </h2>
+        <p>
+            <ol>
+                <li>Primeiro</li>
+                <li>Segundo</li>
+                <li>Terceiro</li>
+            </ol>
+        </p>
+        <h2>
+            Exemplo de Código
+        </h2>
+        <pre>
+            <code>
+                &lt;p&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;Primeiro&lt;/li&gt;
+                        &lt;li&gt;Segundo&lt;/li&gt;
+                        &lt;li&gt;Terceiro&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/p&gt;
+            </code>
+        </pre>
+        <h2>
+            Modificações
+        </h2>
+        <p>
+            Podemos alterar alguns elementos da lista, como o tipo de contagem feito ou de que ponto a contagem começa utilizando os seguintes parâmetros:
+        </p>
+        <ul type="disc">
+            <li>
+                <strong>type:</strong> Nos permite mudar o tipo de contagem da lista.
+            </li>
+            <ul type="circle">
+                <li>
+                    <strong>type="1"</strong> - Para listas numéricas
+                </li>
+                <li>
+                    <strong>type="A"</strong> - Para listas alfabéticas maiúsculas.
+                </li>
+                <li>
+                    <strong>type="a"</strong> - Para listas alfabéticas minúsculas.
+                </li>
+                <li>
+                    <strong>type="I"</strong> - Para listas romanas maiúsculas.
+                </li>
+                <li>
+                    <strong>type="i"</strong> - Para listas romanas minúsculas.
+                </li>
+            </ul>
+            <li>
+                <strong>Start:</strong> Nos permite escolher de que ponto da contagem nossa lista se inicia. Deve <em>sempre</em> ter <strong>valores numéricos</strong>.
+            </li>
+        </ul>
+        <h3>
+            Aplicando os Parâmetros
+        </h3>
+        <h4>
+            Exemplo
+        </h4>
+        <p>
+            <ol type="I" start="3">
+                <li>Primeiro</li>
+                <li>Segundo</li>
+                <li>Terceiro</li>
+            </ol>
+        </p>
+        <h4>
+            Exemplo de Código
+        </h4>
+        <pre>
+            <code>
+                &lt;p&gt;
+                    &lt;ol type="I" start="3"&gt;
+                        &lt;li&gt;Primeiro&lt;/li&gt;
+                        &lt;li&gt;Segundo&lt;/li&gt;
+                        &lt;li&gt;Terceiro&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/p&gt;
+            </code>
+        </pre>
+        <a href="../Principal.html" target="_self" rel="prev">Voltar</a>
+    </main>
+</body>
+    
+</html>

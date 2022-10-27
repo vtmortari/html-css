@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        
+        h1{ /* box level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            border: 10px solid darkslategrey;
+
+            /*
+            Short-hand do elemento "border", engloba as 3 characterísticas mais usadas que são "border-width", "border-style" e "border-color".
+
+            Ordem dos elementos:
+            - border: width style color;
+            */
+
+            padding: 10px 20px;
+
+            /*
+            Shor0hand do elemento "padding", configura as dimenções do padding nas 4 direções, cima, direita, baixo e esquerda.
+
+            Sua declaração deve ser feita em ordem  "horaria":
+
+            padding: top, right, bottom, left;
+
+            Pode ser feita apenas uma delcaração, dessa forma TODAS as dimensões serão configuradas igualmente:
+
+            padding: 10px;
+
+            Podem ser feitas duas declarações, dessa forma as dimensões vericais serão configuradas pela primeira declaração e as horizontais, pela segunda:
+
+            padding: 10px (top, bottom) 20px (right, left)
+            */
+
+
+            margin: 20px auto 40px auto;
+            
+            /* 
+            Short-hand de "margin", funciona das mesmas maneiras que o short-hand de "padding".
+
+            Se quiser centralizar a caixa box-level no navegador, utilizar a declaração "margin: auto;".
+
+            É possivel deixar apenas margens especificas centralizadas, como apenas centralização horizontal:
+
+            margin: 10px auto 10px auto;
+            */
+
+            outline: 5px dashed salmon;
+
+            /*
+            Short-hand de "outline", funciona das mesmas maneiras que o short-hand de "border".
+            */
+
+        }
+
+        a{ /* inline-level*/         
+            border: 10px solid red;
+            padding: 10px;
+        }
+
+        /*
+        Podemos transformar elementos inline e box level atravéz do comando "display".
+
+        display: inline; - Para inline-level
+        display: box;    - Para box-level
+        */
+
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de Caixa Box-Level
+    </h1>
+    <p>
+        Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona 
+    </p>
+</body>
+</html>
