@@ -5,20 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /*  Shorthand - background: 
+
+                color > image > position > repeat > [size] > attachment
+
+                Porém, o atributo [size], atualmente não está aplicável pelos navegadores, muito embora esteja dentro das regras e aplicações impostas pela W3C, logo deve ainda ser adicionado em uma declaração externa.
+            
+            */
+            background: black url(imagens/wallpaper002.jpg) center top no-repeat fixed;
+            background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -33,7 +46,7 @@
             Teste de Imagem de Fundo
         </h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus nam laborum dignissimos? Commodi corrupti repellat amet debitis deserunt sed laudantium. A incidunt nobis illo, error optio porro sint temporibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, ad maxime quod facere perspiciatis dolore eligendi assumenda, sed officiis aperiam magnam iure, delectus ipsa necessitatibus exercitationem eos in aliquam. Quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem atque odio reiciendis itaque, amet incidunt nobis velit autem quis aperiam illum impedit, et fuga minus tempore, quasi nulla culpa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus nam laborum dignissimos? Commodi corrupti repellat amet debitis deserunt sed laudantium. A incidunt nobis illo, error optio porro sint temporibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, ad maxime quod facere perspiciatis dolore eligendi assumenda, sed officiis aperiam magnam iure, delectus ipsa necessitatibus exercitationem eos in aliquam. Quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem atque odio reiciendis itaque, amet incidunt nobis velit autem quis aperiam illum impedit, et fuga minus tempore, quasi nulla culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex sed magnam dignissimos exercitationem ratione totam earum nam voluptate, dolore repellat laborum aliquid, consectetur iste, omnis illo quo fuga reprehenderit. Voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit, deserunt consequatur et iste nostrum voluptatem suscipit, esse magnam odio quibusdam blanditiis ipsum veritatis officiis cum perspiciatis. Ducimus, saepe sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, cum laborum praesentium perferendis aperiam harum quod repudiandae necessitatibus similique recusandae vel eligendi doloremque fugit ducimus porro dolorem dolor doloribus blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis est numquam, aliquid laboriosam vero nobis architecto illum ab? Vitae, iure nam. Id unde iusto mollitia temporibus cupiditate ipsum nobis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus nam laborum dignissimos? Commodi corrupti repellat amet debitis deserunt sed laudantium. A incidunt nobis illo, error optio porro sint temporibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, ad maxime quod facere perspiciatis dolore eligendi assumenda, sed officiis aperiam magnam iure, delectus ipsa necessitatibus exercitationem eos in aliquam. Quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem atque odio reiciendis itaque, amet incidunt nobis velit autem quis aperiam illum impedit, et fuga minus tempore, quasi nulla culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex sed magnam dignissimos exercitationem ratione totam earum nam voluptate, dolore repellat laborum aliquid, consectetur iste, omnis illo quo fuga reprehenderit. Voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit, deserunt consequatur et iste nostrum voluptatem suscipit, esse magnam odio quibusdam blanditiis ipsum veritatis officiis cum perspiciatis. Ducimus, saepe sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, cum laborum praesentium perferendis aperiam harum quod repudiandae necessitatibus similique recusandae vel eligendi doloremque fugit ducimus porro dolorem dolor doloribus blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis est numquam, aliquid laboriosam vero nobis architecto illum ab? Vitae, iure nam. Id unde iusto mollitia temporibus cupiditate ipsum nobis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus nam laborum dignissimos? Commodi corrupti repellat amet debitis deserunt sed laudantium. A incidunt nobis illo, error optio porro sint temporibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, ad maxime quod facere perspiciatis dolore eligendi assumenda, sed officiis aperiam magnam iure, delectus ipsa necessitatibus exercitationem eos in aliquam. Quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem atque odio reiciendis itaque, amet incidunt nobis velit autem quis aperiam illum impedit, et fuga minus tempore, quasi nulla culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex sed magnam dignissimos exercitationem ratione totam earum nam voluptate, dolore repellat laborum aliquid, consectetur iste, omnis illo quo fuga reprehenderit. Voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit, deserunt consequatur et iste nostrum voluptatem suscipit, esse magnam odio quibusdam blanditiis ipsum veritatis officiis cum perspiciatis. Ducimus, saepe sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, cum laborum praesentium perferendis aperiam harum quod repudiandae necessitatibus similique recusandae vel eligendi doloremque fugit ducimus porro dolorem dolor doloribus blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis est numquam, aliquid laboriosam vero nobis architecto illum ab? Vitae, iure nam. Id unde iusto mollitia temporibus cupiditate ipsum nobis nihil!
         </p>
     </main>
 
