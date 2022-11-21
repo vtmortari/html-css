@@ -36,6 +36,17 @@ header p {
     padding-bottom: 50px;
 }
 
+a{
+    text-decoration: none; 
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
 section {
     font-family: var(--fontecordel);
     font-size: 3.5vw;
