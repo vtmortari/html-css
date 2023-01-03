@@ -12,22 +12,22 @@
         }
 
         table{
+            height: 400px;
             width: 400px;
             border-collapse: collapse;
-        }
-
-        tr.linha{
-            background-color: grey;
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: left; /* Alinhamento Horizontal */
+            vertical-align:middle; /* Alinhamento Vertical */
         }
 
-        td.dado{
-            background-color: yellow;
+        .numero{
+            text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -54,26 +54,26 @@
                 C1
             </td>
         </tr>
-        <tr class="linha"> <!-- Segunda Linha -->
+        <tr> <!-- Segunda Linha -->
             <td>
                 A2
             </td>
             <td>
                 B2
             </td>
-            <td>
-                C2
+            <td class="numero">
+                200
             </td>
         </tr>
         <tr> <!-- Terceira Linha -->
             <td>
                 A3
             </td>
-            <td class="dado">
+            <td>
                 B3
             </td>
-            <td>
-                C3
+            <td class="numero">
+                300
             </td>
         </tr>
         <tr> <!-- Quarta Linha -->
