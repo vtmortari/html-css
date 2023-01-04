@@ -16,6 +16,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -23,14 +24,38 @@
             padding: 10px;
         }
 
-        .numero{
-            text-align: right;
+        caption{
+            padding: 10px;
+            border: 1px solid black;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgrey;
         }
 
         thead, tfoot{
             background-color: grey;
             color: white;
         }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        td.numero{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: white;
+        }
+
+        
 
     </style>
 </head>
@@ -42,6 +67,7 @@
         ANATOMIA PARA TABELAS GRANDES
 
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -51,10 +77,13 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -169,10 +198,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <th><strong>210.147.125</strong></th>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicLorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, ullam error, consequatur distinctio maxime sit officiis odio id officia, nemo tenetur ex dicta nihil in ad illum repellendus incidunt vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!llling elit. Labore iusto voluptatibus dolore maxime perspiciatis sint nihil, autem nulla et consequuntur, veritatis doloremque doloribus voluptate ipsa laboriosam fugit laudantium? Debitis, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi necessitatibus, nemo autem voluptates totam perferendis odit officiis rem magnam perspiciatis in maxime quis, praesentium sunt. Et doloremque dolorum excepturi!
+    </p>
 </body>
 </html>
