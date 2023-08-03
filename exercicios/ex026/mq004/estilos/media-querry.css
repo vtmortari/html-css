@@ -35,7 +35,7 @@ Aqui ignoramos a criação de configurações para midias de pequenas telas e de
     }
 
     main::after {
-        content: "Essa impressão foi feita pelo site 222.cursoemvide0.com";
+        content: "Essa impressão foi feita pelo site www.cursoemvideo.com";
         text-decoration: overline;
     }
 
